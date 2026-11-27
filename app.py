@@ -54,8 +54,8 @@ if "age_key" not in st.session_state:
 @st.cache_resource
 def load_model_and_calculate_rmse():
     # Local paths for testing (Change to '../' for GitHub)
-    model_path = '../models/G02_model.joblib'
-    data_path = '../data/clean_insurance.csv'
+    model_path = 'G02_model.joblib'
+    data_path = 'clean_insurance.csv'
     
     model = joblib.load(model_path)
     df = pd.read_csv(data_path)
